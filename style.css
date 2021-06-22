@@ -1,1 +1,251 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*
+    1. Dancing Script
+    2. Montserrat
+                    */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.navbar {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  width: 100%;
+  background: #5718a8;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-container-wrapperLeft {
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+.navbar-container-wrapperLeft a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-container-wrapperRight {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+.navbar-container-wrapperRight-search input {
+  border: none;
+  outline: none;
+  padding: .5rem;
+  width: 300px;
+}
+
+.navbar-container-wrapperRight-search button {
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #222;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-container-wrapperRight-bars button {
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  background: transparent;
+  color: #fff;
+}
+
+#main {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#main .grid {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  color: #fff;
+}
+
+@media (max-width: 826px) {
+  #main .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#main .grid-item {
+  -webkit-box-shadow: 0px 0px 4px #222;
+          box-shadow: 0px 0px 4px #222;
+  background: linear-gradient(140deg, #9796f0, #fbc7d4);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .grid-item .attribute_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+#main .grid-item .item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .grid-item .item-container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .grid-item .item-container .description h2 {
+  font-size: 34px;
+}
+
+#main .grid-item .item-container .description p {
+  margin-bottom: 1rem;
+}
+
+#main .grid-item .item-container .temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .grid-item .item-container .temperature h1 {
+  font-size: 60px;
+}
+
+#main .item1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+#main .item2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+footer {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #222;
+  height: 32vh;
+}
+/*# sourceMappingURL=style.css.map */

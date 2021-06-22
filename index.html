@@ -4,18 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherAPI</title>
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="/" class="navbar__logo">Logo</a>
-        <div class="navbar__items">
-            <a href="/" class="navbar__items--links">Main</a>
-            <a href="/" class="navbar__items--links">Explore</a>
-            <a href="/" class="navbar__items--links">Sign up</a>
-            <a href="/" class="navbar__items--links">Sign in</a>
+        <div class="navbar-container">
+            <div class="navbar-container-wrapperLeft">
+                <a href="/">Cloudy</a>
+            </div>
+            <div class="navbar-container-wrapperRight">
+                <div class="navbar-container-wrapperRight-search">
+                    <input class="inputVal" type="search" placeholder="Znajdź miasto">
+                    <button class="button-search" type="button">Znajdź</button>
+                </div>
+                <div class="navbar-container-wrapperRight-bars">
+                    <!--<button type="button" class="button-default">Ustawienia</button>-->
+                </div>
+            </div>
         </div>
     </nav>
+    <main id="main">
+        <div class="grid">
+            <div class="grid-item item1">
+                <div class="item-container">
+                    <div class="description">
+                        <h2 id="country">Kępno</h2>
+                        <p style="color: rgb(233, 233, 233);" id="desc">Mostly Cloudy</p>
+                    </div>
+                    <div class="temperature">
+                        <h1 id="temp_c">30°C</h1>
+                        <p>H: 32°C L: 19°C</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="grid-item item2">
+                <div class="weatherIcon">
+                    <img id="weatherIco" width="100px" height="100px" src="" alt="weatherIcon"/>
+                </div>
+            </div>
+            <div class="grid-item item3">
+                <div class="attribute_item">
+                    <p>Długość</p>
+                    <p id="lon">value</p>
+                </div>
+                <div class="attribute_item">
+                    <p>Szerokość</p>
+                    <p id="lat">value</p>
+                </div>
+                <div class="attribute_item">
+                    <p>Wilgotność</p>
+                    <p id="humidity">value</p>
+                    </div>
+                <div class="attribute_item">
+                    <p>Ciśnienie</p>
+                    <p id="pressure_mb">value</p>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <div class="attribute_item">
+                    <p>Wiatr</p>
+                    <p id="wind_kph">value</p>
+                </div>
+                <div class="attribute_item">
+                    <p>Kierunek wiatru</p>
+                    <p id="wind_dir">value</p>
+                </div>
+                <div class="attribute_item">
+                    <p>UV</p>
+                    <p id="uv">value</p>
+                </div>
+                
+                <div class="attribute_item">
+                    <p>Poryw wiatru</p>
+                    <p id="gust_kph">value</p>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="script.js"></script>
 </body>
 </html>
